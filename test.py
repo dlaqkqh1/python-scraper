@@ -1,5 +1,6 @@
 import requests
-res = requests.get("https://google.com")
+# res = requests.get("https://google.com")
+res = requests.get("https://nadocoding.tistory.com")
 print("응답코드 :", res.status_code)
 
 # if res.status_code == requests.codes.ok:
@@ -13,5 +14,5 @@ print("웹 스크랩핑을 집행합니다.")
 print(len(res.text))
 print(res.text)
 
-with open("mygoogle.html", "w", encoding="utf-8") as f:
-    f.write(res.text)
+# with open("mygoogle.html", "w", encoding="utf-8") as f:
+#     f.write(res.text)
